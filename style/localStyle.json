@@ -14,12 +14,12 @@
     "pitch": 19.999999999999968,
     "sources": {
         "composite": {
-            "data": "https://github.com/xzq2325/ipaplist/blame/master/sources/geo-1.json",
+            "data": "https://raw.githubusercontent.com/xzq2325/ipaplist/master/sources/geo-1.json",
             "type": "geojson"
         }
     },
-    "sprite": "https://github.com/xzq2325/ipaplist/blame/master/sprite/sprite",
-    "glyphs": "https://github.com/xzq2325/ipaplist/blame/master/{fontstack}/{range}.pbf",
+    "sprite": "https://raw.githubusercontent.com/xzq2325/ipaplist/master/sprite/sprite",
+    "glyphs": "https://raw.githubusercontent.com/xzq2325/ipaplist/master/{fontstack}/{range}.pbf",
         "layers": [
         {
             "id": "default_fill",
