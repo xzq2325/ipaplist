@@ -1,0 +1,3047 @@
+{
+    "version": 8,
+    "name": "testStyle",
+    "metadata": {
+        "mapbox:autocomposite": true,
+        "mapbox:type": "template"
+    },
+    "center": [
+        113.31480556514543,
+        23.127010648717075
+    ],
+    "zoom": 17.12432768777192,
+    "bearing": 24.97388696549729,
+    "pitch": 19.999999999999968,
+    "sources": {
+        "composite": {
+            "data": "https://github.com/xzq2325/ipaplist/blame/master/sources/geo-1.json",
+            "type": "geojson"
+        }
+    },
+    "sprite": "https://github.com/xzq2325/ipaplist/blame/master/sprite/sprite",
+    "glyphs": "https://github.com/xzq2325/ipaplist/blame/master/{fontstack}/{range}.pbf",
+        "layers": [
+        {
+            "id": "default_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "default"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#50A294",
+                "fill-opacity": 0.3
+            }
+        },
+        {
+            "id": "马路_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "马路"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#002BFF",
+                "fill-opacity": 0.1
+            }
+        },
+        {
+            "id": "停车_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "停车"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#F97CE4",
+                "fill-opacity": 0.2
+            }
+        },
+        {
+            "id": "公共_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "公共"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#F7F3FC",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "图标-大门_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 15.210526315789474,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "图标-大门"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#E5F7F2",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "图标-门_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 15.210526315789474,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "图标-门"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#E5F7F2",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "墙_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "墙"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#C2B260",
+                "fill-opacity": 0.1
+            }
+        },
+        {
+            "id": "外框_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "外框"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#E5F7F2",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "建筑_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "建筑"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#C2DED7",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "手术_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "手术"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#FEEFEF",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "树木_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "树木"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#74BA8B",
+                "fill-opacity": 0.3
+            }
+        },
+        {
+            "id": "检查_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "检查"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#EAF7FB",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "治疗_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "治疗"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#F0F0F0",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "等候_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "等候"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#CEF4ED",
+                "fill-opacity": 0
+            }
+        },
+        {
+            "id": "中空_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "中空"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#CDF1EC",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "箭头_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "箭头"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#90CBE8",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "线段_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "线段"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#57EAEA",
+                "fill-opacity": 0.1
+            }
+        },
+        {
+            "id": "绿地_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "绿地"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#D3E9D7",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "行政_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "行政"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#ECECEC",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "诊室_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "诊室"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#E8F6FB",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "转换_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "转换"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#F9F0E5",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "醒目_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "醒目"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#EFD1E1",
+                "fill-opacity": 0.4
+            }
+        },
+        {
+            "id": "醒目1_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "醒目1"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#0000FF",
+                "fill-opacity": 0
+            }
+        },
+        {
+            "id": "醒目文字_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "醒目文字"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#0000FF",
+                "fill-opacity": 0.1
+            }
+        },
+        {
+            "id": "院内马路_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "院内马路"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#F3F3F3",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "院外马路_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "院外马路"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#D5D5D5",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "隐藏区_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "隐藏区"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#DDDDDD",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "等候区_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "等候区"
+                ]
+            ],
+            "paint": {
+                "fill-color": "#0000FF",
+                "fill-opacity": 0.1
+            }
+        },
+        {
+            "id": "default_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "default"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#A7A7A7",
+                "line-opacity": 1,
+                "line-width": 0
+            }
+        },
+        {
+            "id": "中空_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "中空"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#B3B3B3",
+                "line-opacity": 1,
+                "line-width": {
+                    "base": 3,
+                    "stops": [
+                        [
+                            13,
+                            1
+                        ],
+                        [
+                            18.8,
+                            4
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "停车_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "停车"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0.1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "公共_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "公共"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#B3B3B3",
+                "line-opacity": 1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "图标-大门_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 15.210526315789474,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "图标-大门"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0.1,
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            2
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "图标-门_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 15.210526315789474,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "图标-门"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0,
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            2
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "墙_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "墙"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0.1,
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            2
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "外框_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "外框"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#B3B3B3",
+                "line-opacity": 1,
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            2
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "建筑_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "建筑"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#AEAEAE",
+                "line-opacity": 1,
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            2
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "手术_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "手术"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#B3B3B3",
+                "line-opacity": 1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "树木_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "树木"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0.1,
+                "line-width": 0
+            }
+        },
+        {
+            "id": "检查_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "检查"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#C3C3C3",
+                "line-opacity": 1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "治疗_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "治疗"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#B3B3B3",
+                "line-opacity": 1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "等候_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "等候"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#B3B3B3",
+                "line-opacity": 0,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "等候区_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "等候区"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0.1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "箭头_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "箭头"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0.1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "线段_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "线段"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0.1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "绿地_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "绿地"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#B3B3B3",
+                "line-opacity": 1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "行政_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "行政"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#B3B3B3",
+                "line-opacity": 1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "诊室_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "诊室"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#B3B3B3",
+                "line-opacity": 1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "转换_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "转换"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#B3B3B3",
+                "line-opacity": 0.9,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "醒目_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "醒目"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#B3B3B3",
+                "line-opacity": 1,
+                "line-width": 0
+            }
+        },
+        {
+            "id": "醒目1_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "醒目1"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "醒目文字_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "醒目文字"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0.1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "院内马路_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "院内马路"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0.1,
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            2
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "院外马路_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "院外马路"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0.1,
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            2
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "隐藏区_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "隐藏区"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0.1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "马路_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "render",
+                    "马路"
+                ],
+                [
+                    "!=",
+                    "show_region",
+                    "false"
+                ],
+                [
+                    "in",
+                    "$type",
+                    "LineString",
+                    "Polygon"
+                ]
+            ],
+            "paint": {
+                "line-color": "#000000",
+                "line-opacity": 0.1,
+                "line-width": {
+                    "base": 0.75,
+                    "stops": [
+                        [
+                            13,
+                            0.5
+                        ],
+                        [
+                            18.8,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "default_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "default"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "中空_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "中空"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "停车_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "停车"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "公共_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "公共"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#747474",
+                "text-halo-width": 2,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "图标-大门_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 15.210526315789474,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "图标-大门"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1.3333333333333333,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "图标-门_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 16.105263157894736,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "图标-门"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1.3333333333333333,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "墙_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "墙"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "外框_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "外框"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#747474",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "建筑_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "建筑"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 15
+            },
+            "paint": {
+                "text-color": "#747474",
+                "text-halo-width": 1.3333333333333333,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "手术_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "手术"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#747474",
+                "text-halo-width": 1.6666666666666667,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "树木_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "树木"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "检查_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "检查"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#747474",
+                "text-halo-width": 1.6666666666666667,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "治疗_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "治疗"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#747474",
+                "text-halo-width": 1.3333333333333333,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "等候_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "等候"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#747474",
+                "text-halo-width": 1.6666666666666667,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "等候区_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "等候区"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "箭头_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "箭头"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "线段_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "线段"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "绿地_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "绿地"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#747474",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "行政_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "行政"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#747474",
+                "text-halo-width": 1.3333333333333333,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "诊室_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "诊室"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#747474",
+                "text-halo-width": 1.6666666666666667,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "转换_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "转换"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#747474",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "醒目_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "醒目"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 15
+            },
+            "paint": {
+                "text-color": "#747474",
+                "text-halo-width": 1.6666666666666667,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "醒目1_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "醒目1"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 15
+            },
+            "paint": {
+                "text-color": "#747474",
+                "text-halo-width": 1.6666666666666667,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "醒目文字_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "醒目文字"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "院内马路_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "院内马路"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1.3333333333333333,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "院外马路_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "院外马路"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1.3333333333333333,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "隐藏区_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 17,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "隐藏区"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        },
+        {
+            "id": "马路_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "guangfuer-1",
+            "minzoom": 0,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "render",
+                    "马路"
+                ]
+            ],
+            "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
+                "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#444444",
+                "text-halo-width": 1,
+                "text-halo-color": "#FFFFFF"
+            }
+        }
+    ],
+    "created": "2017-09-01T06:10:16.767Z",
+    "id": "cj71hcwsb0q7t2sqh9m0fqfsj",
+    "modified": "2017-09-01T08:26:21.875Z",
+    "owner": "xzq2325",
+    "visibility": "public",
+    "draft": false
+}
