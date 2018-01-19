@@ -1,6 +1,16 @@
 {
     "version": 8,
     "name": "testStyle",
+    "metadata": {
+        "mapbox:autocomposite": true,
+        "mapbox:type": "template"
+    },
+    "sources": {
+        "composite": {
+          "type": "geojson",
+          "data": "../sources/geo-1.json"
+        }
+    },
     "center": [
         113.31480556514543,
         23.127010648717075
@@ -8,8 +18,6 @@
     "zoom": 17.12432768777192,
     "bearing": 24.97388696549729,
     "pitch": 19.999999999999968,
-    "data": "../sources/geo-1.json",
-    "type": "geojson",
     "sprite": "../sprite/sprite",
     "glyphs": "../{fontstack}/{range}.pbf",
         "layers": [
@@ -17,6 +25,7 @@
             "id": "default_fill",
             "type": "fill",
             "minzoom": 0,
+            "source": "composite",
             "filter": [
                 "all",
                 [
@@ -28,67 +37,16 @@
                     "!=",
                     "show_region",
                     "false"
+                ],
+                [
+                    "==",
+                    "render",
+                    "default"
                 ]
             ],
             "paint": {
                 "fill-color": "#50A294",
                 "fill-opacity": 0.3
-            }
-        },
-        {
-            "id": "default_line",
-            "type": "line",
-            "minzoom": 0,
-            "filter": [
-                "all",
-                [
-                    "!=",
-                    "show_region",
-                    "false"
-                ],
-                [
-                    "in",
-                    "$type",
-                    "LineString",
-                    "Polygon"
-                ]
-            ],
-            "paint": {
-                "line-color": "#A7A7A7",
-                "line-opacity": 1,
-                "line-width": 0
-            }
-        },
-        {
-            "id": "default_symbol",
-            "type": "symbol",
-            "source": "composite",
-            "source-layer": "guangfuer-1",
-            "minzoom": 0,
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "$type",
-                    "Point"
-                ]
-            ],
-            "layout": {
-                "text-font": [
-                    "notosansscregular"
-                ],
-                "text-field": "{label}",
-                "icon-image": "{icon_sails}",
-                "icon-offset": [
-                    0,
-                    -20
-                ],
-                "text-size": 14
-            },
-            "paint": {
-                "text-color": "#444444",
-                "text-halo-width": 1,
-                "text-halo-color": "#FFFFFF"
             }
         }
     ],
