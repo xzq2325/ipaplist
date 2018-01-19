@@ -1,10 +1,10 @@
 {
     "version": 8,
     "name": "testStyle",
-    "metadata": {
-        "mapbox:autocomposite": true,
-        "mapbox:type": "template"
-    },
+    // "metadata": {
+    //     "mapbox:autocomposite": true,
+    //     "mapbox:type": "template"
+    // },
     "center": [
         113.31480556514543,
         23.127010648717075
