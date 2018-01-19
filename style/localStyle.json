@@ -13,10 +13,8 @@
     "bearing": 24.97388696549729,
     "pitch": 19.999999999999968,
     "sources": {
-        "composite": {
-            "data": "../sources/geo-1.json",
-            "type": "geojson"
-        }
+        "data": "../sources/geo-1.json",
+        "type": "geojson"
     },
     "sprite": "../sprite/sprite",
     "glyphs": "../{fontstack}/{range}.pbf",
