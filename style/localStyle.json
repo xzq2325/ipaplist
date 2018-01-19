@@ -89,7 +89,15 @@
                 "Point"
             ],
             "layout": {
+                "text-font": [
+                    "notosansscregular"
+                ],
                 "text-field": "{label}",
+                "icon-image": "{icon_sails}",
+                "icon-offset": [
+                    0,
+                    -20
+                ],
                 "text-size": 14
             },
             "paint": {
