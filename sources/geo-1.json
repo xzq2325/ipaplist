@@ -1,6 +1,4 @@
 {
-    "type": "geojson",
-"data": {
     "type": "FeatureCollection",
     "bounds": [
         [
@@ -21459,5 +21457,4 @@
     ],
     "regionMap": {},
     "transferMap": {}
-}
 }
