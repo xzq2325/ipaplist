@@ -12,7 +12,7 @@
     "zoom": 17.12432768777192,
     "bearing": 24.97388696549729,
     "pitch": 19.999999999999968,
-    "sources": {
+    "source": {
         "data": "../sources/geo-1.json",
         "type": "geojson"
     },
