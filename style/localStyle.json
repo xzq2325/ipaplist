@@ -1,10 +1,6 @@
 {
     "version": 8,
     "name": "testStyle",
-    // "metadata": {
-    //     "mapbox:autocomposite": true,
-    //     "mapbox:type": "template"
-    // },
     "center": [
         113.31480556514543,
         23.127010648717075
@@ -12,10 +8,8 @@
     "zoom": 17.12432768777192,
     "bearing": 24.97388696549729,
     "pitch": 19.999999999999968,
-    "source": {
-        "data": "../sources/geo-1.json",
-        "type": "geojson"
-    },
+    "data": "../sources/geo-1.json",
+    "type": "geojson",
     "sprite": "../sprite/sprite",
     "glyphs": "../{fontstack}/{range}.pbf",
         "layers": [
