@@ -19,6 +19,7 @@
     "bearing": 24.97388696549729,
     "pitch": 19.999999999999968,
     "sprite": "https://raw.githubusercontent.com/xzq2325/ipaplist/master/sprite/sprite",
+    "glyphs": "https://raw.githubusercontent.com/xzq2325/ipaplist/master/{fontstack}/{range}.pbf",
     "layers": [
         {
             "id": "等候区_fill",
