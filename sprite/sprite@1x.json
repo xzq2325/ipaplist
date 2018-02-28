@@ -1,246 +1,169 @@
 {
-    "disability": {
+    "_line_arrow": {
         "width": 32,
-        "height": 37,
+        "height": 32,
         "x": 0,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "drinkingfountain": {
-        "width": 32,
-        "height": 37,
-        "x": 32,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "elevator": {
-        "width": 32,
-        "height": 37,
-        "x": 64,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "entrance": {
-        "width": 32,
-        "height": 37,
-        "x": 96,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "escalator": {
-        "width": 32,
-        "height": 37,
-        "x": 128,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "escalator_down": {
-        "width": 32,
-        "height": 37,
-        "x": 160,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "escalator_up": {
-        "width": 32,
-        "height": 37,
-        "x": 192,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "exit": {
-        "width": 32,
-        "height": 37,
-        "x": 224,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "fireexstinguisher": {
-        "width": 32,
-        "height": 37,
-        "x": 256,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "firstaid": {
-        "width": 32,
-        "height": 37,
-        "x": 288,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "heating_and_aircon": {
-        "width": 32,
-        "height": 37,
-        "x": 320,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "information": {
-        "width": 32,
-        "height": 37,
-        "x": 352,
         "y": 0,
         "pixelRatio": 1
     },
     "ips_atm_arrange": {
         "width": 80,
         "height": 80,
-        "x": 384,
+        "x": 32,
         "y": 0,
         "pixelRatio": 1
     },
     "ips_atm_pay": {
         "width": 80,
         "height": 80,
-        "x": 464,
+        "x": 112,
         "y": 0,
         "pixelRatio": 1
     },
     "ips_atm_print": {
         "width": 80,
         "height": 80,
-        "x": 544,
+        "x": 192,
         "y": 0,
         "pixelRatio": 1
     },
     "ips_elevator": {
         "width": 80,
         "height": 80,
-        "x": 624,
+        "x": 272,
         "y": 0,
         "pixelRatio": 1
     },
     "ips_escalator": {
         "width": 80,
         "height": 80,
-        "x": 704,
+        "x": 352,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "ips_gateway": {
+        "width": 80,
+        "height": 80,
+        "x": 432,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "ips_gateway_big": {
+        "width": 80,
+        "height": 80,
+        "x": 512,
         "y": 0,
         "pixelRatio": 1
     },
     "ips_nurse_station": {
         "width": 80,
         "height": 80,
-        "x": 784,
+        "x": 592,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "ips_parking": {
+        "width": 80,
+        "height": 80,
+        "x": 672,
         "y": 0,
         "pixelRatio": 1
     },
     "ips_stair": {
         "width": 80,
         "height": 80,
-        "x": 864,
+        "x": 752,
         "y": 0,
         "pixelRatio": 1
     },
     "ips_toilet": {
         "width": 80,
         "height": 80,
-        "x": 944,
+        "x": 832,
         "y": 0,
         "pixelRatio": 1
     },
     "ips_wheel_toilet": {
         "width": 80,
         "height": 80,
-        "x": 1024,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "line_arrow": {
-        "width": 32,
-        "height": 32,
-        "x": 1104,
+        "x": 912,
         "y": 0,
         "pixelRatio": 1
     },
     "location_arrow": {
         "width": 100,
         "height": 100,
-        "x": 1136,
+        "x": 992,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "location_follow": {
+        "width": 100,
+        "height": 100,
+        "x": 1092,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "location_normal": {
+        "width": 100,
+        "height": 100,
+        "x": 1192,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "marker_car": {
+        "width": 50,
+        "height": 60,
+        "x": 1292,
         "y": 0,
         "pixelRatio": 1
     },
     "marker_end": {
         "width": 41,
         "height": 56,
-        "x": 1236,
+        "x": 1342,
         "y": 0,
         "pixelRatio": 1
     },
     "marker_start": {
         "width": 41,
         "height": 56,
-        "x": 1277,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "moving_walkway_enter_export": {
-        "width": 32,
-        "height": 37,
-        "x": 1318,
+        "x": 1383,
         "y": 0,
         "pixelRatio": 1
     },
     "poi": {
         "width": 41,
         "height": 55,
-        "x": 1350,
+        "x": 1424,
         "y": 0,
         "pixelRatio": 1
     },
-    "shower": {
-        "width": 32,
-        "height": 37,
-        "x": 1391,
+    "share": {
+        "width": 110,
+        "height": 110,
+        "x": 1465,
         "y": 0,
         "pixelRatio": 1
     },
-    "smoking": {
-        "width": 32,
-        "height": 37,
-        "x": 1423,
+    "share_offline": {
+        "width": 110,
+        "height": 110,
+        "x": 1575,
         "y": 0,
         "pixelRatio": 1
     },
-    "stairs": {
-        "width": 32,
-        "height": 37,
-        "x": 1455,
+    "share_offline_same": {
+        "width": 110,
+        "height": 110,
+        "x": 1685,
         "y": 0,
         "pixelRatio": 1
     },
-    "telephone": {
-        "width": 32,
-        "height": 37,
-        "x": 1487,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "toilets": {
-        "width": 32,
-        "height": 37,
-        "x": 1519,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "trash": {
-        "width": 32,
-        "height": 37,
-        "x": 1551,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "waiting": {
-        "width": 32,
-        "height": 37,
-        "x": 1583,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "wifi": {
-        "width": 32,
-        "height": 37,
-        "x": 1615,
+    "share_same": {
+        "width": 110,
+        "height": 110,
+        "x": 1795,
         "y": 0,
         "pixelRatio": 1
     }

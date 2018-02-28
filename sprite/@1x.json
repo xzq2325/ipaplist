@@ -146,122 +146,66 @@
         "y": 0,
         "pixelRatio": 1
     },
-    "line_arrow": {
-        "width": 32,
-        "height": 32,
-        "x": 1104,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "location_arrow": {
-        "width": 100,
-        "height": 100,
-        "x": 1136,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "location_normal":{
-        "width":100,
-        "height":100,
-        "x":150,
-        "y":100,
-        "pixelRatio":0
-    },
-   "location_follow":{
-       "width":100,
-       "height":100,
-       "x":50,
-       "y":100,
-       "pixelRatio":0
-   },
-   "marker_car":{
-       "width":50,
-       "height":50,
-       "x":0,
-       "y":100,
-       "pixelRatio":0
-   },
-    "marker_end": {
-        "width": 41,
-        "height": 56,
-        "x": 1236,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "marker_start": {
-        "width": 41,
-        "height": 56,
-        "x": 1277,
-        "y": 0,
-        "pixelRatio": 1
-    },
     "moving_walkway_enter_export": {
         "width": 32,
         "height": 37,
-        "x": 1318,
-        "y": 0,
-        "pixelRatio": 1
-    },
-    "poi": {
-        "width": 41,
-        "height": 55,
-        "x": 1350,
+        "x": 1104,
         "y": 0,
         "pixelRatio": 1
     },
     "shower": {
         "width": 32,
         "height": 37,
-        "x": 1391,
+        "x": 1136,
         "y": 0,
         "pixelRatio": 1
     },
     "smoking": {
         "width": 32,
         "height": 37,
-        "x": 1423,
+        "x": 1168,
         "y": 0,
         "pixelRatio": 1
     },
     "stairs": {
         "width": 32,
         "height": 37,
-        "x": 1455,
+        "x": 1200,
         "y": 0,
         "pixelRatio": 1
     },
     "telephone": {
         "width": 32,
         "height": 37,
-        "x": 1487,
+        "x": 1232,
         "y": 0,
         "pixelRatio": 1
     },
     "toilets": {
         "width": 32,
         "height": 37,
-        "x": 1519,
+        "x": 1264,
         "y": 0,
         "pixelRatio": 1
     },
     "trash": {
         "width": 32,
         "height": 37,
-        "x": 1551,
+        "x": 1296,
         "y": 0,
         "pixelRatio": 1
     },
     "waiting": {
         "width": 32,
         "height": 37,
-        "x": 1583,
+        "x": 1328,
         "y": 0,
         "pixelRatio": 1
     },
     "wifi": {
         "width": 32,
         "height": 37,
-        "x": 1615,
+        "x": 1360,
         "y": 0,
         "pixelRatio": 1
     }
